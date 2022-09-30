@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Notifications</title>
+		<!-- FontAwesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<!-- Bootstrap Icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+		/>
+		<!-- Normalize Css File -->
+		<link rel="stylesheet" href="font/fontawesome.min.css" />
+		<!-- Google Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Shortcut Icon -->
+		<link rel="shortcut icon" href="imgs/logo.png" />
+		<!-- Main Css File -->
+		<link rel="stylesheet" href="css/notifications.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<div class="main-notifications">
+					<div class="heading">
+						<div class="title">
+							<h2>Notifications</h2>
+							<span class="num-of-notifications">0</span>
+						</div>
+						<span id="mark" class="mark">Mark all as read</span>
+					</div>
+					<div class="notifications-container">
+						<div class="notification-box new">
+							<div class="img">
+								<img src="imgs/avatar-mark-webber.webp" alt="" />
+							</div>
+							<div class="text-info">
+								<p>
+									<b id="name">Mark Webber</b>
+									<span class="event">reacted to your recent post</span>
+									<b id="links">My first tournament today!</b>
+									<svg
+										class="new-notif"
+										width="10"
+										height="10"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"
+										/>
+									</svg>
+								</p>
+								<div class="date">
+									<span>1m ago</span>
+								</div>
+							</div>
+						</div>
+						<div class="notification-box new">
+							<div class="img">
+								<img src="imgs/avatar-angela-gray.webp" alt="" />
+							</div>
+							<div class="text-info">
+								<p>
+									<b id="name">Angela Gray</b>
+									<span class="event">followed you</span>
+									<svg
+										class="new-notif"
+										width="10"
+										height="10"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"
+										/>
+									</svg>
+								</p>
+								<div class="date">
+									<span>1m ago</span>
+								</div>
+							</div>
+						</div>
+						<div class="notification-box new">
+							<div class="img">
+								<img src="imgs/avatar-jacob-thompson.webp" alt="" />
+							</div>
+							<div class="text-info">
+								<p>
+									<b id="name">Jacob Thompson</b>
+									<span class="event">has joined your group </span>
+									<b id="links">Chess Club</b>
+									<svg
+										class="new-notif"
+										width="10"
+										height="10"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"
+										/>
+									</svg>
+								</p>
+								<div class="date">
+									<span>1m ago</span>
+								</div>
+							</div>
+						</div>
+						<div class="notification-box new">
+							<div class="img">
+								<img src="imgs/avatar-rizky-hasanuddin.webp" alt="" />
+							</div>
+							<div class="text-info">
+								<p>
+									<b id="name">Rizky Hasanuddin</b>
+									<span class="event">reacted to your recent post</span>
+								</p>
+								<div class="date">
+									<span>5 days ago</span>
+								</div>
+								<div class="msg new">
+									<p>
+										Hello, thanks for setting up the Ches Club. i've benn a
+										member for a few weeks now and i'm alread having lots of fun
+										and inproving my game.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="notification-box new hide-msg">
+							<div class="img">
+								<img src="imgs/avatar-kimberly-smith.webp" alt="" />
+							</div>
+							<div class="text-info">
+								<p>
+									<b id="name">Kimberly Smith</b>
+									<span class="event">commented on your picture</span>
+								</p>
+								<div class="post-image">
+									<img src="imgs/image-chess.webp" alt="" />
+								</div>
+								<div class="date">
+									<span>1m ago</span>
+								</div>
+							</div>
+						</div>
+						<div class="notification-box new">
+							<div class="img">
+								<img src="imgs/avatar-nathan-peterson.webp" alt="" />
+							</div>
+							<div class="text-info">
+								<p>
+									<b id="name">Nathan Peterson</b>
+									<span class="event">reacted to your recent post</span>
+									<b id="links"
+										>5 end-game strategies to increase your win rate</b
+									>
+									<svg
+										class="new-notif"
+										width="10"
+										height="10"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"
+										/>
+									</svg>
+								</p>
+								<div class="date">
+									<span>1m ago</span>
+								</div>
+							</div>
+						</div>
+						<div class="notification-box new">
+							<div class="img">
+								<img src="imgs/avatar-anna-kim.webp" alt="" />
+							</div>
+							<div class="text-info">
+								<p>
+									<b id="name">Anna Kim</b>
+									<span class="event">left the group</span>
+									<b id="links">Chess Club</b>
+									<svg
+										class="new-notif"
+										width="10"
+										height="10"
+										viewBox="0 0 24 24"
+									>
+										<path
+											fill="currentColor"
+											d="M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10s10-4.47 10-10S17.53 2 12 2z"
+										/>
+									</svg>
+								</p>
+								<div class="date">
+									<span>1m ago</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- Contentful -->
+		<script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+		<!-- Main App -->
+		<script src="js/app.js"></script>
+	</body>
+</html>

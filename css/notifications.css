@@ -1,0 +1,307 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Plus Jakarta Sans";
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  color: hsl(219deg, 84%, 34%);
+}
+
+h1,
+h2 {
+  font-size: 1.5625rem;
+}
+
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+  color: hsl(210deg, 60%, 98%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.c-i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex-f-g {
+  gap: 1.5rem;
+}
+
+.container {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Very Small */
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+  }
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+  }
+}
+/* Medium */
+@media (min-width: 991px) {
+  .container {
+    width: 960px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+/* Extra Large */
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+main {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+main .main-notifications {
+  max-width: 1440px;
+  background-color: hsl(0deg, 0%, 100%);
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+}
+main .main-notifications .heading {
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.5rem;
+}
+main .main-notifications .heading .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .main-notifications .heading .title h2 {
+  margin-right: 1rem;
+  line-height: 1.5;
+}
+main .main-notifications .heading .title span {
+  font-size: 1.1875rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0 0.7rem;
+  border-radius: 0.4rem;
+  background-color: hsl(219deg, 84%, 34%);
+  color: hsl(0deg, 0%, 100%);
+}
+main .main-notifications .heading .mark {
+  font-weight: 500;
+  color: hsl(219deg, 12%, 42%);
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+main .main-notifications .heading .mark:hover {
+  color: hsl(219deg, 84%, 34%);
+}
+main .main-notifications .notifications-container .notification-box {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+main .main-notifications .notifications-container .notification-box:not(:last-child) {
+  margin-bottom: 1rem;
+}
+main .main-notifications .notifications-container .notification-box.new {
+  background-color: hsla(219deg, 85%, 26%, 0.1);
+}
+main .main-notifications .notifications-container .notification-box .text-info {
+  margin-right: 45px;
+}
+@media screen and (max-width: 768px) {
+  main .main-notifications .notifications-container .notification-box .text-info .date {
+    top: 50px !important;
+  }
+}
+main .main-notifications .notifications-container .notification-box .text-info p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+main .main-notifications .notifications-container .notification-box .text-info p:first-of-type {
+  color: hsl(224deg, 21%, 14%);
+}
+main .main-notifications .notifications-container .notification-box .text-info p span {
+  color: hsl(219deg, 12%, 42%);
+}
+main .main-notifications .notifications-container .notification-box .text-info p b {
+  color: hsl(224deg, 21%, 14%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+main .main-notifications .notifications-container .notification-box .text-info p b:hover {
+  color: hsl(219deg, 84%, 34%);
+}
+main .main-notifications .notifications-container .notification-box .text-info p .new-notif {
+  color: hsl(1deg, 90%, 64%);
+}
+main .main-notifications .notifications-container .notification-box .text-info .date {
+  margin-top: 0.3rem;
+}
+main .main-notifications .notifications-container .notification-box .text-info .date span {
+  font-weight: 500;
+  color: hsl(219deg, 14%, 63%);
+}
+main .main-notifications .notifications-container .notification-box .text-info .msg {
+  margin-top: 0.8rem;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  cursor: pointer;
+}
+main .main-notifications .notifications-container .notification-box .text-info .msg.old {
+  background-color: hsl(0deg, 0%, 100%);
+}
+main .main-notifications .notifications-container .notification-box .text-info .msg.new {
+  background-color: hsla(219deg, 85%, 26%, 0.15);
+}
+main .main-notifications .notifications-container .notification-box .text-info .msg p {
+  color: hsl(219deg, 12%, 42%);
+}
+main .main-notifications .notifications-container .notification-box .img {
+  margin-right: 1rem;
+}
+main .main-notifications .notifications-container .notification-box .img img {
+  max-width: 50px;
+}
+main .main-notifications .notifications-container .notification-box .post-image {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 0.4rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+main .main-notifications .notifications-container .notification-box .post-image.hide {
+  display: none;
+}
+main .main-notifications .notifications-container .notification-box .post-image:hover {
+  border: 2px solid hsl(219deg, 14%, 63%);
+}
+main .main-notifications .notifications-container .notification-box .post-image img {
+  max-width: 40px;
+}
+main .main-notifications .notifications-container .notification-box.hide-msg .msg {
+  display: none;
+}
+main .main-notifications .notifications-container .notification-box.hide-image .post-image {
+  display: none;
+}
+main .main-notifications .notifications-container .notification-box.hide-image .text-info {
+  margin: 0 !important;
+}
+main .main-notifications .notifications-container .notification-box.old .new-notif {
+  display: none;
+}
+main .main-notifications .notifications-container .notification-box.old .text-info .msg {
+  background-color: hsl(0deg, 0%, 100%);
+}
+main .main-notifications .notifications-container .notification-box.old .text-info #links {
+  color: hsl(219deg, 12%, 42%) !important;
+}/*# sourceMappingURL=notifications.css.map */
