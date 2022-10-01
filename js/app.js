@@ -7,17 +7,12 @@ const redMark = document.querySelectorAll("new-notif");
 
 notifiBoxEl.forEach(notifiEl => {
 	updateNotifi(notifiEl);
-	notifiEl.addEventListener(
-		"click",
-		e => {
-			markAsRead(e);
-			if (notifiCountEl.textContent > 0) {
-				notifiCountEl.textContent--;
-			}
-			console.log(e);
-		},
-		{ once: true }
-	);
+	notifiEl.addEventListener("click", e => {
+		if (notifiEl.classList.contains("new")) {
+			notifiCountEl.textContent--;
+		}
+		markAsRead(e);
+	});
 });
 
 //! AddEventlisteners
